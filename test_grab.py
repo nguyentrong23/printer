@@ -32,8 +32,8 @@ def preprocess(image):
 
 
 # Đọc ảnh
-image = cv2.imread('img/font/art_font.bmp')
-# image = cv2.pyrDown(image)
+image = cv2.imread('img/font/art_font2.bmp')
+image = cv2.pyrDown(image)
 e,rect_ale,mask_target = preprocess(image)
 # mask1
 mask1 = np.zeros(image.shape[:2], np.uint8)
