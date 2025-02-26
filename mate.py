@@ -186,7 +186,11 @@ for id, con in enumerate(wish_list):
 
     match_score = cv2.matchShapes(optimized_contour, con["con"], cv2.CONTOURS_MATCH_I1, 0.0)
     print(match_score)
+<<<<<<< HEAD
     if match_score <= 0.03:
+=======
+    if match_score <= 0.5:
+>>>>>>> 34fd6655559e773ee15f8236d7b3c619f13c3d39
         # print(f"Shape match score: {match_score}")
         # print(f"center: {con['center']}")
         # print(f"rotate: {np.degrees(dict['angel'])}")
